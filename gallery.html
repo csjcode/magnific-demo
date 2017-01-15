@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magniic demo</title>
+
+      <!-- Magnific Popup core CSS file -->
+      <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    body {
+      padding-top:20px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Gallery #1</h3>
+          <div class="gallery">
+            <a href="images/IMG_9203.jpg">Open image 1 (gallery #1)</a><br>
+            <a href="images/IMG_9204.jpg">Open image 1 (gallery #1)</a><br>
+            <a href="images/IMG_9223.jpg">Open image 2 (gallery #1)</a><br>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>Gallery #2</h3>
+          <div class="gallery">
+              <a href="images/IMG_9225.jpg">Open image 1 (gallery #2)</a><br>
+              <a href="images/IMG_9226.jpg">Open image 2 (gallery #2)</a><br>
+              <a href="images/IMG_9223.jpg">Open image 2 (gallery #2)</a><br>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+
+    $('.gallery').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            gallery: {
+              enabled:true
+            }
+        });
+    });
+    </script>
+
+
+  </body>
+</html>
